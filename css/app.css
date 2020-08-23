@@ -5,4 +5,76 @@
   --bg-primary: #228ffc;
   --bg-white: #ffffff; }
 
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Roboto"; }
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  background-color: var(--bg-primary); }
+  header .container {
+    height: var(--height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .logo {
+    padding: .55rem; }
+    header .logo a {
+      color: var(--bg-white); }
+  header .menu-toggle {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer; }
+    @media (min-width: 992px) {
+      header .menu-toggle {
+        display: none; } }
+    header .menu-toggle span {
+      height: 5px;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 3px; }
+    header .menu-toggle span:nth-child(2) {
+      top: 10px; }
+    header .menu-toggle span:nth-child(3) {
+      top: 20px; }
+  header .navegacion {
+    display: none; }
+    @media (min-width: 992px) {
+      header .navegacion {
+        display: block; } }
+    header .navegacion a {
+      display: inline-block;
+      color: var(--bg-white);
+      padding: 0 .5rem; }
+      header .navegacion a:hover::after {
+        width: 100%; }
+      header .navegacion a::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin: auto;
+        height: 2px;
+        background-color: var(--bg-white);
+        transition: .4s;
+        margin-top: 3px;
+        border-radius: 2px; }
+
 /*# sourceMappingURL=app.css.map */
