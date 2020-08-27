@@ -8,7 +8,7 @@ const bpObjetivos = matchMedia("(min-width: 992px)")
 
 const toTop =  contObjetivos.getBoundingClientRect().top / 2
 
-let indicadorScroll = 0 
+let indicadorScroll = 0  
 
 //EL EFECTO DE SCROLL EN LOS OBJETIVOS SOLO SE HARÁ EN UN MINIMO DE 992PX
 if (bpObjetivos.matches) {
@@ -28,7 +28,8 @@ if (bpObjetivos.matches) {
                 ar.style.animationDelay = `${index * 0.3}s`
             })
 
-            indicadorScroll = 1
+            indicadorScroll = 1 
+
         } else{
             
             if (indicadorScroll) {

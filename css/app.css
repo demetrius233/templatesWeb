@@ -197,7 +197,7 @@ header {
   margin-bottom: .5rem;
   position: relative;
   overflow: hidden;
-  height: 250px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,6 +221,7 @@ header {
     background-image: url(../img/img1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     transition: .3s;
     padding: .5rem;
     color: #ffffff;
@@ -260,18 +261,27 @@ header {
     border-right: 0; } }
 
 .trabajos {
-  background: linear-gradient(to right, #000046, #1cb5e0);
+  background: linear-gradient(to right, #0b0b42, #1cb5e0);
   margin: 4rem 0;
   text-align: center;
-  padding: 6rem 0;
-  padding-top: 5rem; }
+  padding: 2rem; }
+  @media (min-width: 992px) {
+    .trabajos {
+      padding-bottom: 9rem;
+      padding-top: 8rem; } }
   @media (min-width: 992px) {
     .trabajos {
       clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); } }
+  .trabajos h2 {
+    color: white;
+    margin-bottom: 2rem; }
+    @media (min-width: 992px) {
+      .trabajos h2 {
+        font-size: 1.7rem; } }
 
 .trabajos .plantillas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem; }
   .trabajos .plantillas .plantillas-box {
     background-color: var(--bg-white);
